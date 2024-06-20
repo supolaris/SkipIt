@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
   },
   renderLogoView: {},
   renderBrandLogo: {
-    height: 200,
+    height: 150,
     width: 150,
   },
 

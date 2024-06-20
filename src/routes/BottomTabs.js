@@ -10,14 +10,9 @@ import ScannerScreen from '../components/screensUi/ScannerScreen';
 import AboutScreen from '../components/screensUi/AboutScreen';
 
 import ListIcon from 'react-native-vector-icons/Feather';
-//list
 import NewsIcon from 'react-native-vector-icons/Ionicons';
-//newspaper-outline
 import ScanIcon from 'react-native-vector-icons/MaterialCommunityIcons';
-//barcode-scan
 import AboutIcon from 'react-native-vector-icons/Ionicons';
-
-//
 
 export const MyBottomTabs = () => {
   const Tab = createBottomTabNavigator();
@@ -68,40 +63,6 @@ export const MyBottomTabs = () => {
         }}
       />
       <Tab.Screen
-        name="NewsScreen"
-        component={NewsScreen}
-        options={{
-          tabBarLabel: ({focused}) => {
-            return (
-              <View>
-                <Text
-                  style={[
-                    styles.tabBarLabelText,
-                    {
-                      color: focused
-                        ? SkipItColors.FocusRed
-                        : SkipItColors.BachgroundWhite,
-                    },
-                  ]}>
-                  News
-                </Text>
-              </View>
-            );
-          },
-          tabBarIcon: ({focused}) => {
-            return (
-              <NewsIcon
-                name="newspaper-outline"
-                size={30}
-                color={
-                  focused ? SkipItColors.FocusRed : SkipItColors.BachgroundWhite
-                }
-              />
-            );
-          },
-        }}
-      />
-      <Tab.Screen
         name="ScannerScreen"
         component={ScannerScreen}
         options={{
@@ -136,6 +97,40 @@ export const MyBottomTabs = () => {
         }}
       />
       <Tab.Screen
+        name="NewsScreen"
+        component={NewsScreen}
+        options={{
+          tabBarLabel: ({focused}) => {
+            return (
+              <View>
+                <Text
+                  style={[
+                    styles.tabBarLabelText,
+                    {
+                      color: focused
+                        ? SkipItColors.FocusRed
+                        : SkipItColors.BachgroundWhite,
+                    },
+                  ]}>
+                  News
+                </Text>
+              </View>
+            );
+          },
+          tabBarIcon: ({focused}) => {
+            return (
+              <NewsIcon
+                name="newspaper-outline"
+                size={30}
+                color={
+                  focused ? SkipItColors.FocusRed : SkipItColors.BachgroundWhite
+                }
+              />
+            );
+          },
+        }}
+      />
+      {/* <Tab.Screen
         name="AboutScreen"
         component={AboutScreen}
         options={{
@@ -168,7 +163,7 @@ export const MyBottomTabs = () => {
             );
           },
         }}
-      />
+      /> */}
     </Tab.Navigator>
   );
 };
