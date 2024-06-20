@@ -2,6 +2,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {NavigationContainer} from '@react-navigation/native';
 
 import {MyBottomTabs} from './BottomTabs';
+import ProductDetail from '../screens/ProductDetail';
 
 export const MyNativeStack = () => {
   const Stack = createNativeStackNavigator();
@@ -12,6 +13,7 @@ export const MyNativeStack = () => {
           headerShown: false,
         }}>
         <Stack.Screen name="BottomTabs" component={MyBottomTabs} />
+        <Stack.Screen name="ProductDetail" component={ProductDetail} />
       </Stack.Navigator>
     </NavigationContainer>
   );

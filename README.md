@@ -33,3 +33,15 @@ Edit android/app/build.gradle (NOT android/build.gradle) and add:
 ```bash
 apply from: file("../../node_modules/react-native-vector-icons/fonts.gradle")
 ```
+
+#### For typescript
+
+```bash
+npm i --save-dev @types/react-native-vector-icons
+```
+
+## Reanimated
+
+```bash
+yarn add react-native-reanimated
+```
