@@ -19,7 +19,6 @@ const NewsScreen = props => {
       />
       <View style={styles.container}>
         <Text>NewsScreen</Text>
-        <PrimaryTextInput />
       </View>
     </>
   );

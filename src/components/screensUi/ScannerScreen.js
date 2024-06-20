@@ -16,6 +16,9 @@ const ScannerScreen = props => {
         onChangeText={props.onChangeText}
         showSettingIcon={false}
       />
+      <View style={styles.container}>
+        <Text>Scanner Screen</Text>
+      </View>
     </>
   );
 };

@@ -16,6 +16,9 @@ const AboutScreen = props => {
         onChangeText={props.onChangeText}
         showSettingIcon={false}
       />
+      <View style={styles.container}>
+        <Text>About Screen</Text>
+      </View>
     </>
   );
 };
