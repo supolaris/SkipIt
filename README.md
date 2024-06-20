@@ -45,3 +45,15 @@ npm i --save-dev @types/react-native-vector-icons
 ```bash
 yarn add react-native-reanimated
 ```
+
+## Lottie
+
+```bash
+yarn add lottie-react-native
+```
+
+## Linear gradient
+
+```bash
+yarn add react-native-linear-gradient
+```
